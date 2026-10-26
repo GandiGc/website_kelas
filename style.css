@@ -1,0 +1,232 @@
+/* --- 1. Pengaturan Variabel Warna (Mode Terang/Default) --- */
+:root {
+    --bg-main: #f0f4f8;
+    --bg-card: #ffffff;
+    --bg-header: linear-gradient(135deg, #1e3c72, #2a5298);
+    --bg-nav: #0f172a;
+    --bg-table-header: #f1f5f9;
+    --bg-table-hover: #f8fafc;
+    --bg-card-pengurus: #f8fafc;
+    --text-color: #333333;
+    --text-heading: #1e293b;
+    --text-sub: #64748b;
+    --border-color: #e2e8f0;
+    --accent-color: #38bdf8;
+    --shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* --- 2. Pengaturan Variabel Warna (Mode Gelap) --- */
+[data-theme="dark"] {
+    --bg-main: #0f172a;
+    --bg-card: #1e293b;
+    --bg-header: linear-gradient(135deg, #0f172a, #1e293b);
+    --bg-nav: #020617;
+    --bg-table-header: #334155;
+    --bg-table-hover: #334155;
+    --bg-card-pengurus: #334155;
+    --text-color: #e2e8f0;
+    --text-heading: #38bdf8;
+    --text-sub: #94a3b8;
+    --border-color: #475569;
+    --accent-color: #38bdf8;
+    --shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* --- 3. Pengaturan Dasar & Smooth Scroll --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding-bottom: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* --- 4. Header --- */
+header {
+    background: var(--bg-header);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* --- 5. Menu Navigasi --- */
+nav {
+    background-color: var(--bg-nav);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+nav a {
+    color: #e2e8f0;
+    padding: 15px 18px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--accent-color);
+}
+
+/* Tombol Mode Gelap di Navigasi */
+.theme-toggle-btn {
+    background: transparent;
+    border: 1px solid #475569;
+    color: #e2e8f0;
+    padding: 6px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin: 8px 10px;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+    background: var(--accent-color);
+    color: #0f172a;
+    border-color: var(--accent-color);
+}
+
+/* --- 6. Main Container --- */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.container {
+    background: var(--bg-card);
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-4px);
+}
+
+.container h2 {
+    color: var(--text-heading);
+    margin-bottom: 18px;
+    border-bottom: 3px solid var(--accent-color);
+    display: inline-block;
+    padding-bottom: 5px;
+    font-size: 1.4rem;
+}
+
+/* --- 7. Tabel --- */
+.piket-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.piket-table th, .piket-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.piket-table th {
+    background-color: var(--bg-table-header);
+    color: var(--text-heading);
+    font-weight: 700;
+}
+
+.piket-table tr:hover {
+    background-color: var(--bg-table-hover);
+}
+
+/* --- 8. Grid Kartu Pengurus --- */
+.grid-struktur {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.card-pengurus {
+    background: var(--bg-card-pengurus);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+
+.card-pengurus .jabatan {
+    font-size: 0.85rem;
+    color: var(--text-sub);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.card-pengurus .nama {
+    font-size: 1.1rem;
+    color: var(--text-heading);
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+/* --- 9. Tombol Aspirasi --- */
+.btn-aspirasi {
+    display: inline-block;
+    background: #10b981;
+    color: white;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-aspirasi:hover {
+    background: #059669;
+    transform: scale(1.02);
+}
+
+/* --- 10. Footer --- */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--text-sub);
+    font-size: 0.85rem;
+}
+/* --- Highlight Piket Hari Ini --- */
+.piket-today {
+    background-color: rgba(56, 189, 248, 0.25) !important;
+    font-weight: bold;
+    border-left: 5px solid var(--accent-color);
+}

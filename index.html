@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Resmi Kelas X.6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="beranda">
+        <h1>Kelas X.6</h1>
+        <!-- Tempat Salam Otomatis & Jam Digital -->
+        <p id="greeting-text">Selamat Datang di Portal Resmi Warga X.6 SMAN Pakusari</p>
+        <p id="clock-text" style="font-weight: bold; margin-top: 5px; opacity: 0.95;"></p>
+    </header>
+
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#jadwal">Jadwal Piket</a>
+        <a href="#mapel">Jadwal Pelajaran</a>
+        <a href="#struktur">Struktur Kelas</a>
+        <a href="#aspirasi">Aspirasi</a>
+        <!-- Tombol Mode Gelap -->
+        <button id="theme-toggle" class="theme-toggle-btn">🌙 Mode Gelap</button>
+    </nav>
+
+    <main>
+        <!-- Tentang Kami -->
+        <div class="container">
+            <h2>Tentang Kelas Kami</h2>
+            <p>Halo! Ini adalah portal informasi digital resmi untuk kelas kita. Semua pengumuman penting, jadwal, dan dokumentasi kegiatan bakal dipusatkan di sini.</p>
+        </div>
+
+        <!-- Jadwal Piket Kebersihan -->
+        <div class="container" id="jadwal">
+            <h2>Jadwal Piket Kebersihan</h2>
+            <table class="piket-table">
+                <thead>
+                    <tr>
+                        <th>Hari</th>
+                        <th>Petugas Piket</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="piket-senin">
+                        <td><strong>Senin</strong></td>
+                        <td>Akbar, Sandi, Aldi, Lanita, Nisa, Ima, Yusril, Rani</td>
+                    </tr>
+                    <tr id="piket-selasa">
+                        <td><strong>Selasa</strong></td>
+                        <td>Gandi, Putra, Hamdani, Via, Vivi, Nadya, Gibran</td>
+                    </tr>
+                    <tr id="piket-rabu">
+                        <td><strong>Rabu</strong></td>
+                        <td>Dani, Farlan, Maulid, Anggi, Revina, Andini, Naila</td>
+                    </tr>
+                    <tr id="piket-kamis">
+                        <td><strong>Kamis</strong></td>
+                        <td>Haydar, Nuzril, Erni, Safira, Jessika, Irfan, Bima</td>
+                    </tr>
+                    <tr id="piket-jumat">
+                        <td><strong>Jumat</strong></td>
+                        <td>Rafka, Aril, Efendi, Kenzi, Bilqis, Aila, Chika</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Jadwal Pelajaran -->
+        <div class="container" id="mapel">
+            <h2>Jadwal Pelajaran Kelas X.6</h2>
+            <table class="piket-table">
+                <thead>
+                    <tr>
+                        <th>Hari</th>
+                        <th>Jam Ke-1 s.d. 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Senin</strong></td>
+                        <td>
+                            1. (07:45-08:30) SEJ (P. Asy'ari)<br>
+                            2. (08:30-09:15) PABP (P. Hoten)<br>
+                            3. (09:15-10:00) BJ (B. Ita)<br>
+                            4. (10:20-11:05) EKO (B. Esty)<br>
+                            5. (11:05-11:50) FIS (B. Nia)<br>
+                            6. (12:20-13:00) GEO (P. Muiz)<br>
+                            7. (13:00-13:40) S PRAK (B. Ratna)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Selasa</strong></td>
+                        <td>
+                            1. (07:00-07:45) PKN (B. Hasti)<br>
+                            2. (07:45-08:30) EKO (B. Esty)<br>
+                            3. (08:30-09:15) BIO (B. Widia)<br>
+                            4. (09:15-10:00) GEO (P. Muiz)<br>
+                            5. (10:20-11:05) SEJ (P. Asy'ari)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Rabu</strong></td>
+                        <td>
+                            1. (07:00-07:45) INFOR (P. Syamsul)<br>
+                            2. (07:45-08:30) FIS (B. Nia)<br>
+                            3. (08:30-09:15) BIG (B. Suwita)<br>
+                            4. (09:15-10:00) PABP (P. Hoten)<br>
+                            5. (10:20-11:05) BIO (B. Widia)<br>
+                            6. (11:05-11:50) B INDO (P. Riman)<br>
+                            7. (12:20-13:00) SOSIO (B. Vivi)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kamis</strong></td>
+                        <td>
+                            1. (07:00-07:45) SOSIO (B. Vivi)<br>
+                            2. (07:45-08:30) MTK (B. Frida)<br>
+                            3. (08:30-09:15) KIM (B. Dian)<br>
+                            4. (09:15-10:00) BIG (B. Suwita)<br>
+                            5. (10:20-11:05) B INDO (P. Riman)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Jumat</strong></td>
+                        <td>
+                            1. (07:45-08:30) KIM (B. Dian)<br>
+                            2. (08:30-09:15) PJOK (B. Ina)<br>
+                            3. (09:15-10:00) MTK (B. Frida)
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Struktur Kelas -->
+        <div class="container" id="struktur">
+            <h2>Struktur Organisasi Kelas</h2>
+            <div class="grid-struktur" style="margin-bottom: 15px;">
+                <div class="card-pengurus">
+                    <div class="jabatan">Wali Kelas</div>
+                    <div class="nama" style="font-size: 1rem;">Abdullah Muizzudin, M.Pd</div>
+                </div>
+                <div class="card-pengurus">
+                    <div class="jabatan">Ketua Kelas</div>
+                    <div class="nama" style="font-size: 1rem;">Ahmad Akbar Rohim</div>
+                </div>
+                <div class="card-pengurus">
+                    <div class="jabatan">Wakil Ketua</div>
+                    <div class="nama" style="font-size: 1rem;">Gibran Dwi Trisna</div>
+                </div>
+            </div>
+            <div class="grid-struktur">
+                <div class="card-pengurus">
+                    <div class="jabatan">Sekretaris</div>
+                    <div class="nama" style="font-size: 0.95rem;">Afifah Candrawulan B.</div>
+                </div>
+                <div class="card-pengurus">
+                    <div class="jabatan">Bendahara</div>
+                    <div class="nama" style="font-size: 0.95rem;">Anggelina Nur Holifiyan</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kotak Aspirasi -->
+        <div class="container" id="aspirasi">
+            <h2>Kotak Aspirasi Kelas X.6</h2>
+            <p>Punya kritik, saran, atau usulan buat kelas kita? Sampaikan lewat link di bawah ini ya (bisa diisi rahasia):</p>
+            <a href="https://forms.gle/n7ecxNah21P5Ggvm8" target="_blank" class="btn-aspirasi">Kirim Aspirasi / Masukan</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kelas X.6 SMAN Pakusari Jember. All rights reserved.</p>
+    </footer>
+
+    <!-- SKRIP JAVASCRIPT LENGKAP -->
+    <script>
+        // 1. Fitur Dark / Light Mode Toggle
+        const toggleBtn = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('theme');
+
+        if (currentTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            toggleBtn.textContent = '☀️ Mode Terang';
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            let theme = document.documentElement.getAttribute('data-theme');
+            if (theme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+                toggleBtn.textContent = '🌙 Mode Gelap';
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+                toggleBtn.textContent = '☀️ Mode Terang';
+            }
+        });
+
+        // 2. Fitur Jam Real-Time & Salam Otomatis Sesuai Waktu
+        function updateClockAndGreeting() {
+            const now = new Date();
+            const hours = now.getHours();
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            
+            // Tentukan Salam Berdasarkan Jam
+            let greeting = "Selamat Datang";
+            if (hours >= 3 && hours < 11) {
+                greeting = "Selamat Pagi ☀️, Warga X.6!";
+            } else if (hours >= 11 && hours < 15) {
+                greeting = "Selamat Siang 🌤️, Warga X.6!";
+            } else if (hours >= 15 && hours < 18) {
+                greeting = "Selamat Sore 🌆, Warga X.6!";
+            } else {
+                greeting = "Selamat Malam 🌙, Warga X.6!";
+            }
+
+            document.getElementById('greeting-text').textContent = greeting;
+            document.getElementById('clock-text').textContent = `Waktu Server/Lokal: ${String(hours).padStart(2, '0')}:${minutes}:${seconds} WIB`;
+        }
+
+        // Jalankan jam setiap 1 detik (1000 ms)
+        setInterval(updateClockAndGreeting, 1000);
+        updateClockAndGreeting(); // panggil langsung saat pertama kali reload
+
+        // 3. Fitur Sorot / Highlight Otomatis Piket Hari Ini
+        function highlightPiketHariIni() {
+            const dayOfWeek = new Date().getDay(); // 0 = Minggu, 1 = Senin, ..., 5 = Jumat, 6 = Sabtu
+            const mapHari = {
+                1: 'piket-senin',
+                2: 'piket-selasa',
+                3: 'piket-rabu',
+                4: 'piket-kamis',
+                5: 'piket-jumat'
+            };
+
+            const targetId = mapHari[dayOfWeek];
+            if (targetId) {
+                const targetRow = document.getElementById(targetId);
+                if (targetRow) {
+                    targetRow.classList.add('piket-today');
+                }
+            }
+        }
+
+        highlightPiketHariIni();
+    </script>
+
+</body>
+</html>
