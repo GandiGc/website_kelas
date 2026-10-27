@@ -1,0 +1,30 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+locale: "id"
+
+collections:
+  - name: "pengumuman"
+    label: "📢 Pengumuman Kelas"
+    folder: "content/pengumuman"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Judul Pengumuman", name: "title", widget: "string"}
+      - {label: "Tanggal", name: "date", widget: "datetime"}
+      - {label: "Penulis", name: "author", widget: "string", default: "Pengurus Kelas"}
+      - {label: "Isi Pengumuman", name: "body", widget: "markdown"}
+
+  - name: "struktur"
+    label: "👥 Struktur Organisasi"
+    folder: "content/struktur"
+    create: true
+    fields:
+      - {label: "Jabatan", name: "title", widget: "string"}
+      - {label: "Nama Lengkap", name: "nama", widget: "string"}
+      - {label: "Foto", name: "image", widget: "image", required: false}
+      - {label: "Motto / Sambutan", name: "body", widget: "markdown", required: false}
